@@ -1,4 +1,4 @@
-package com.odevpedro.admin.catalogo;
+package com.odevpedro.bank;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 public class BankTransactionAnalyzerSimple {
 
-    private  static final String RESSOURCES = "src/main/resources/something.csv";
+    private  static final String RESSOURCES = "src/main/";
     public static void main(String[] args) throws IOException {
         final Path path = Paths.get(RESSOURCES + args[0]);
         final List<String> lines = Files.readAllLines(path);
